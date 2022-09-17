@@ -15,6 +15,7 @@ const isVAlidRequestBody = function(requestBody){
 
 const createIntern = async function(req,res){
     try {
+      res.setHeader('Access.Control.Allow.Origin','*')
        const requestBody = req.body
 
          const emailRegex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/

@@ -73,6 +73,7 @@ const createCollage = async function (req, res) {
 
  let getCollegeDetails = async function(req,res){
   try{
+    res.setHeader('Access.Control.Allow.Origin','*')
     let data = req.query
 
           if(!data.collegeName){
